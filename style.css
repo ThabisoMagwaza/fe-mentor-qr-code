@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1.5;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+}
+
+html {
+    --color-white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    background: var(--light-gray);
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background: var(--color-white);
+    margin: 10px;
+
+    padding: 16px;
+    width: 350px;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+}
+
+.content {
+    margin: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    color: var(--dark-blue);
+}
+
+.content p {
+    color: var(--grayish-blue);
+}
+
+.qr-code {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
